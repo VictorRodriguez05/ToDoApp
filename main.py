@@ -6,9 +6,11 @@ def main():
     task.mark_as_complete()
     print(f"Tarea completada:  {task.is_completdC}")
     task.remove_task()
-    print(f"tarea eliminada:  {task.get_task_name()}")
-
-
+    print(f"tarea eliminada (remove_task):  {task.get_task_name()}")
+    task.delete_task()
+    print(f"tarea eliminada (delete_task):{task.get_task_name()}")
+    task.set_done()
+    print(f"tarea completada(set_done): {task.get_task_name()}")
 
 if __name__ == "__name__":
    main()   
