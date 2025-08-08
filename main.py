@@ -5,6 +5,8 @@ def main():
     print(f"tarea creada: {task.get_task_name()}")
     task.mark_as_complete()
     print(f"Tarea completada:  {task.is_completdC}")
+    task.remove_task()
+    print(f"tarea eliminada:  {task.get_task_name()}")
 
 
 
