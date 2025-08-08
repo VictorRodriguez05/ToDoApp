@@ -48,7 +48,7 @@
 
 6. Historial de commits:
 
-(Usar el siguiente comando para ver el historial y describirlo si lo piden)
+
 
 git log --oneline --graph --all
 
