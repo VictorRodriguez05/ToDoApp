@@ -2,13 +2,9 @@ from task_model import TaskModel
 
 def main():
     task = TaskModel("estudiar para el examen")
-    print(f"tarea creada: {task.get_task_name()}")
-    task.mark_as_complete()
-    print(f"Tarea completada:  {task.is_completdC}")
-    task.remove_task()
-    print(f"tarea eliminada:  {task.get_task_name()}")
+    print(f"Tarea desde estudiante3: {task.get_task_name()}")
+    task.set_done()
+    print("Estudiante3 completó la tarea")
 
-
-
-if __name__ == "__name__":
-   main()   
+if __name__ == "__main__":
+    main()
