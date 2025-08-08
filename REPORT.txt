@@ -1,0 +1,54 @@
+# Informe del Grupo 
+
+1. Pasos realizados:
+
+- Creamos el repositorio ToDoApp en GitHub.
+- Se añadieron a los miembros del grupo como colaboradores.
+- Clonamos el repositorio localmente con git clone.
+- En la rama main creamos los archivos main.py, task_model.py y .gitignore.
+- Hicimos commit y push de los archivos base.
+- Cada miembro creó su propia rama: estudiante1, estudiante2, estudiante3.
+- Implementamos funcionalidades individualmente.
+- Creamos la rama group-1 y fusionamos las ramas individuales.
+- Resolvimos un conflicto real en main.py y task_model.py entre group-1 y estudiante3.
+- Hicimos Pull Request desde group-1 hacia main.
+- Fusionamos el PR en main y dejamos todo listo para entrega.
+
+2. Comandos Git utilizados:
+
+- git clone <URL>: Clonar repositorio desde GitHub.
+- git checkout -b <rama>: Crear nueva rama.
+- git add <archivo>: Agregar archivos al área de staging.
+- git commit -m "mensaje": Guardar cambios en la rama.
+- git push origin <rama>: Subir cambios a GitHub.
+- git merge <rama>: Fusionar ramas.
+- git pull origin main: Obtener actualizaciones desde main.
+- git log --oneline --graph --all: Ver historial completo de commits.
+- git push origin --delete <rama>: Eliminar ramas remotas innecesarias.
+
+3. Conflictos:
+
+- Tuvimos un conflicto real en main.py y task_model.py entre la rama estudiante3 y group-1.
+- El conflicto fue causado por diferencias en los métodos y atributos para completar y eliminar tareas (`is_done`, `set_done`, `mark_as_complete`, etc.).
+- Lo resolvimos combinando lo mejor de ambos métodos, manteniendo `is_completed` como atributo principal.
+
+4. Contribuciones:
+
+- Estudiante 1: Añadió `mark_as_complete()` y modificó main.py para mostrar la tarea completada.
+- Estudiante 2: Añadió `remove_task()` y actualizó el README.md.
+- Estudiante 3: Simuló el conflicto modificando las mismas líneas de código y resolvió el conflicto integrando los cambios.
+
+5. Reflexiones:
+
+- Aprendimos cómo dividir tareas usando ramas en Git.
+- Entendimos cómo simular y resolver conflictos en un entorno controlado.
+- El uso de Pull Requests es útil para revisión y validación colaborativa.
+- La experiencia refuerza la importancia de la coordinación y comunicación en el desarrollo en equipo.
+- Para mejorar este flujo, podríamos usar herramientas como integración continua (CI/CD) y revisiones automatizadas.
+
+6. Historial de commits:
+
+(Usar el siguiente comando para ver el historial y describirlo si lo piden)
+
+git log --oneline --graph --all
+
